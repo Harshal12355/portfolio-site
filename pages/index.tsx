@@ -1,15 +1,19 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
+import Footer from '../components/footer'
+import Header from '../components/header'
+import Profile from '../components/profile'
+import ProjectPreview from '../components/projectPreview'
+import Layout from '../components/layout'
 const Home: NextPage = () => {
   return (
-    <div>
-      <div>Harshal Thachapully</div>
-      <div>Data Scientist</div>
-      <div>Contact Details: 234953423</div>
-      <div>Hello World!</div>
-      
-    </div>
+    <Layout>
+      <div className='text-slate-700 flex flex-col gap-6'>
+        <Header />
+        <Profile />
+        <ProjectPreview />
+        <Footer />
+      </div>
+    </Layout>
   )
 }
 
